@@ -18,7 +18,7 @@ public class cubo : MonoBehaviour
 
     void Start()
     {
-        
+        Instrucciones();
     }
 
     // Update is called once per frame
@@ -43,5 +43,11 @@ public class cubo : MonoBehaviour
         {
             Instantiate(proyectilPrefab,posicionTorreta.position,transform.rotation);
         };
+    }
+
+    void Instrucciones ()
+    {
+        Debug.Log ("Presiona W,A,S,D para moverte");
+        Debug.Log ("Presiona la tecla Espacio para disparar");
     }
 }
