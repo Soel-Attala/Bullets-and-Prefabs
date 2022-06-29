@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class cubo : MonoBehaviour
@@ -11,6 +9,10 @@ public class cubo : MonoBehaviour
     public float ver;
     public float speed = 100;
     public GameObject proyectilPrefab;
+
+    public Transform posicionTorreta;
+
+    
 
 
 
@@ -39,7 +41,7 @@ public class cubo : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(proyectilPrefab, transform.position,transform.rotation);
+            Instantiate(proyectilPrefab,posicionTorreta.position,transform.rotation);
         };
     }
 }
